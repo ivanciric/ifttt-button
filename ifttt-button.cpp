@@ -17,14 +17,14 @@ ESP8266WiFiMulti WiFiMulti;
 
 int button_state = 0;
 
-String action = "";
-String key = "";
+String action = ""; // maker action
+String key = ""; // maker key
 
 void setup() {
     pinMode(0, INPUT);
     USE_SERIAL.begin(115200);
     
-    WiFiMulti.addAP("", "");
+    WiFiMulti.addAP("", ""); // your SSID and password
 }
 
 void loop() {
